@@ -14,7 +14,9 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  &__item + item {
+}
+.menu-list .item {
+  &.item + .item {
     margin-left: 8px;
   }
 }
