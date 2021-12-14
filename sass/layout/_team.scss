@@ -15,9 +15,9 @@
 }
 .team .list .item {
   background: #ffffff;
-}
-.team .list .item + .item {
-  margin-left: 30px;
+  &.item + .item {
+    margin-left: 30px;
+  }
 }
 .team .list .title {
   margin-bottom: 10px;
@@ -54,10 +54,11 @@
 .soc-list .list-item {
   width: 44px;
   height: 44px;
+  &.list-item + .list-item {
+    margin-left: 10px;
+  }
 }
-.soc-list .list-item + .list-item {
-  margin-left: 10px;
-}
+
 .soc-list .link {
   cursor: pointer;
   width: 100%;
@@ -70,9 +71,9 @@
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.soc-list .link:hover,
-.soc-list .link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
 }

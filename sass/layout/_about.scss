@@ -12,9 +12,9 @@
 }
 .about .item {
   position: relative;
-}
-.about .list .item + .item {
-  margin-left: 30px;
+  &.item + .item {
+    margin-left: 30px;
+  }
 }
 .about .img {
   display: block;

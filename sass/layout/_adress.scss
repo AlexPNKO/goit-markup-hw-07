@@ -62,9 +62,9 @@
 .soc-link .item {
   width: 44px;
   height: 44px;
-}
-.soc-link .item + .item {
-  margin-left: 10px;
+  &.item + .item {
+    margin-left: 10px;
+  }
 }
 .soc-link .link {
   cursor: pointer;
@@ -78,12 +78,13 @@
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
 }
-.soc-link .link:hover,
-.soc-link .link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
+
 .e-mail {
   margin-left: 93px;
 }

@@ -72,7 +72,7 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
+.backdrop is-hidden .modal {
   transform: scale(1.5) rotate(270deg);
 }
 
@@ -106,8 +106,7 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close .modal-close:hover,
-.modal-close .modal-close-:focus {
+.modal-close:hover, .modal-close:focus {
   fill: #2196f3;
 }
 
@@ -144,6 +143,10 @@ ul {
   border-color: #2196f3;
 }
 
+.modal .input:focus + .icon {
+  fill: #2196f3;
+}
+
 .input-text {
   font-size: 12px;
   display: block;
@@ -161,10 +164,6 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal .input:focus + .icon {
-  fill: #2196f3;
 }
 
 .modal .field {
@@ -219,12 +218,11 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .button:hover,
-.modal .button:focus {
+.modal .button:hover, .modal .button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.check-text {
+.modal .button .check-text {
   display: flex;
   font-size: 14px;
   color: #757575;
@@ -232,12 +230,7 @@ ul {
   justify-content: center;
 }
 
-.field-checkbox .link {
-  color: #2196f3;
-  text-decoration: underline;
-}
-
-.check-text span {
+.modal .button .check-text span {
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -246,6 +239,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.field-checkbox .link {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .icon-check {
@@ -285,7 +283,7 @@ ul {
   margin-left: 93px;
 }
 
-.menu-nav .item + .item {
+.contacts .item + .contacts .item {
   margin-left: 50px;
 }
 
@@ -316,8 +314,7 @@ ul {
   bottom: 0;
 }
 
-.menu-nav .link:hover,
-.menu-nav .link:focus {
+.menu-nav .link.current:hover, .menu-nav .link.current:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -330,7 +327,7 @@ ul {
   margin-left: auto;
 }
 
-.contacts .item + .item {
+.contacts.item + .item {
   margin-left: 30px;
 }
 
@@ -353,8 +350,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts .item .link:hover,
-.contacts .item .link:focus {
+.contacts .item .link:hover, .contacts .item .link:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -473,7 +469,7 @@ ul {
   position: relative;
 }
 
-.about .list .item + .item {
+.about .item.item + .item {
   margin-left: 30px;
 }
 
@@ -526,7 +522,7 @@ ul {
   background: #ffffff;
 }
 
-.team .list .item + .item {
+.team .list .item.item + .item {
   margin-left: 30px;
 }
 
@@ -571,7 +567,7 @@ ul {
   height: 44px;
 }
 
-.soc-list .list-item + .list-item {
+.soc-list .list-item.list-item + .list-item {
   margin-left: 10px;
 }
 
@@ -588,8 +584,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-list .link:hover,
-.soc-list .link:focus {
+.soc-list .link:hover, .soc-list .link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -623,8 +618,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients .link:hover,
-.clients .link:focus {
+.clients .link:hover, .clients .link:focus {
   color: #2196f3;
   background-color: #ffffff;
   border: 1px solid #2196f3;
@@ -639,7 +633,7 @@ ul {
   height: 92px;
 }
 
-.clients .item + .item {
+.clients .item.item + .item {
   margin-left: 30px;
 }
 
@@ -721,7 +715,7 @@ ul {
   height: 44px;
 }
 
-.soc-link .item + .item {
+.soc-link .item.item + .item {
   margin-left: 10px;
 }
 
@@ -738,8 +732,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-link .link:hover,
-.soc-link .link:focus {
+.soc-link .link:hover, .soc-link .link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -823,7 +816,7 @@ ul {
   justify-content: center;
 }
 
-.menu-list .item + .item {
+.menu-list__item + item {
   margin-left: 8px;
 }
 
@@ -844,8 +837,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-list .button:hover,
-.menu-list .button:focus {
+.menu-list .button:hover, .menu-list .button:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -906,8 +898,7 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects .link:hover,
-.projects .link:focus {
+.projects .link:hover, .projects .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
