@@ -1,4 +1,4 @@
-.section .hidden-title {
+.features__hidden-title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -10,10 +10,10 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-.features .list {
+.features__list {
   display: flex;
 }
-.features .image {
+.features__image {
   display: flex;
   width: 270px;
   height: 120px;
@@ -23,11 +23,13 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-.features .item + .item {
-  margin-left: 30px;
+.features__item {
+  & + & {
+    margin-left: 30px;
+  }
 }
 
-.features .title {
+.features__title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -37,7 +39,7 @@
   text-transform: uppercase;
   color: var(--qualities-title-color);
 }
-.features .text {
+.features__text {
   margin-bottom: 0px;
   font-weight: 400;
   font-size: 14px;

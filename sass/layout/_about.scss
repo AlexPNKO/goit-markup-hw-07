@@ -1,4 +1,4 @@
-.about-title {
+.about__main-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -7,21 +7,21 @@
   margin-bottom: 50px;
   text-align: center;
 }
-.about .list {
+.about__list {
   display: flex;
 }
-.about .item {
+.about__item {
   position: relative;
-  &.item + .item {
+  & + & {
     margin-left: 30px;
   }
 }
-.about .img {
+.about__img {
   display: block;
   max-width: 100%;
 }
 
-.about .label {
+.about__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-.about .title {
+.about__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
