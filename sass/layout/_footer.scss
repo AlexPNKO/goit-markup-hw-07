@@ -90,7 +90,10 @@
 .e-mail {
   margin-left: 93px;
 }
-.e-mail__main-title {
+.subscribe {
+  display: flex;
+}
+.e-mail .title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -99,10 +102,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.e-mail__subscribe {
-  display: flex;
-}
-.e-mail__input {
+.subscribe .input {
   background-color: transparent;
   padding: 15px 16px;
   width: 358px;
@@ -114,12 +114,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.e-mail__input::placeholder {
+.e-input .input::placeholder {
   letter-spacing: 0.03em;
   font-size: 16px;
   color: #2f303a;
 }
-.e-mail__button {
+.subscribe .button {
   align-items: center;
   margin-left: 12px;
   padding-left: 29px;
@@ -137,6 +137,6 @@
   line-height: 30px;
   letter-spacing: 0.06em;
 }
-.e-mail__icon {
+.subscribe .icon {
   margin-left: 10px;
 }

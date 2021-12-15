@@ -748,11 +748,11 @@ ul {
   color: #ffffff;
 }
 
-.e-mail__subscribe {
+.subscribe {
   display: flex;
 }
 
-.e-mail__input {
+.subscribe__input {
   background-color: transparent;
   padding: 15px 16px;
   width: 358px;
@@ -765,13 +765,13 @@ ul {
   border-radius: 4px;
 }
 
-.e-mail__input::placeholder {
+.subscribe__input::placeholder {
   letter-spacing: 0.03em;
   font-size: 16px;
   color: #2f303a;
 }
 
-.e-mail__button {
+.e-input .input .subscribe .button {
   align-items: center;
   margin-left: 12px;
   padding-left: 29px;
@@ -790,7 +790,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.e-mail__icon {
+.subscribe__icon {
   margin-left: 10px;
 }
 
