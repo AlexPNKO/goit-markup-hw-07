@@ -1,4 +1,4 @@
-.visually-hidden {
+.functions__visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -10,17 +10,17 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-.menu-list {
+.functions__list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
-.menu-list .item {
-  &.item + .item {
+.functions__item {
+  & + & {
     margin-left: 8px;
   }
 }
-.menu-list .button {
+.functions__button {
   cursor: pointer;
   display: inline-block;
   border: 1px solid transparent;
