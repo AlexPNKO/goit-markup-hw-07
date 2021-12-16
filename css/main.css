@@ -72,7 +72,7 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop is-hidden .modal {
+.backdrop.is-hidden .modal {
   transform: scale(1.5) rotate(270deg);
 }
 
@@ -106,7 +106,8 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover, .modal-close:focus {
+.modal-close:hover,
+.modal-close-:focus {
   fill: #2196f3;
 }
 
@@ -143,10 +144,6 @@ ul {
   border-color: #2196f3;
 }
 
-.modal .input:focus + .icon {
-  fill: #2196f3;
-}
-
 .input-text {
   font-size: 12px;
   display: block;
@@ -166,16 +163,16 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal .input:focus + .icon {
+  fill: #2196f3;
+}
+
 .modal .field {
   margin-bottom: 10px;
 }
 
 .field-comment {
   margin-bottom: 20px;
-}
-
-.field-checkbox {
-  margin-bottom: 30px;
 }
 
 .comment-text {
@@ -218,11 +215,21 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .button:hover, .modal .button:focus {
+.modal .button:hover,
+.modal .button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal .button .check-text {
+.field-checkbox {
+  margin-bottom: 30px;
+}
+
+.check:checked + .check-text span {
+  background-color: #2196f3;
+  border: none;
+}
+
+.check-text {
   display: flex;
   font-size: 14px;
   color: #757575;
@@ -230,7 +237,7 @@ ul {
   justify-content: center;
 }
 
-.modal .button .check-text span {
+.check-text span {
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -241,18 +248,13 @@ ul {
   justify-content: center;
 }
 
-.field-checkbox .link {
-  color: #2196f3;
-  text-decoration: underline;
-}
-
 .icon-check {
   fill: #ffffff;
 }
 
-.check:checked + .check-text span {
-  background-color: #2196f3;
-  border: none;
+.field-checkbox.link {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .header {
