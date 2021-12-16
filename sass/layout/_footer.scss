@@ -2,11 +2,10 @@
   padding: 60px 0;
   background: #2f303a;
   display: flex;
-}
-
-.footer .container {
-  align-items: baseline;
-  display: flex;
+  &.container {
+    align-items: baseline;
+    display: flex;
+  }
 }
 .adress {
   flex-grow: 1;
