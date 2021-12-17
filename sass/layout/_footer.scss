@@ -8,11 +8,11 @@
   align-items: baseline;
   display: flex;
 }
-.adress {
+.address {
   flex-grow: 1;
   margin-right: 70px;
 }
-.adress__main-title {
+.address__title {
   font-style: normal;
   font-family: Raleway;
   font-weight: 700;
@@ -21,18 +21,18 @@
   letter-spacing: 0.03em;
   color: var(--webstudio-color);
 }
-.adress__title-studio {
+.address__title-studio {
   color: #ffffff;
 }
-.adress__list {
+.address__list {
   margin-top: 20px;
 }
-.adress__item {
+.address__item {
   & + & {
     margin-top: 9px;
   }
 }
-.adress__link {
+.address__link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -40,11 +40,8 @@
   letter-spacing: 0.03em;
   color: var(--footer-adress-color);
 }
-.adress__geo {
+.address__geo {
   color: var(--adress-geo-color);
-}
-.soclink {
-  width: 206px;
 }
 .soclink__main-title {
   font-weight: 700;
