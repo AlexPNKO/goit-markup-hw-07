@@ -17,6 +17,7 @@
   }
 }
 .projects-list__item-link {
+  text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover .projects-list__description-text,
   &:focus .projects-list__description-text {
@@ -46,7 +47,8 @@
   background: #ffffff;
 }
 
-.projects .link {
+.projects-list__item-link {
+  text-decoration: none;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
